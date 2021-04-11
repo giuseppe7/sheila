@@ -43,4 +43,5 @@ Follow these steps to run the application locally alongside Prometheus and Grafa
 
 #### References
 
+1. https://github.com/golang-standards/project-layout
 1. Hue API at https://developers.meethue.com/
