@@ -29,7 +29,7 @@ Follow these steps to run the application locally alongside Prometheus and Grafa
 
 1. Create the container:  
    `docker build -f ./build/package/Dockerfile -t sheila .`
-0. Launch the containers for DEMI, Prometheus, and Grafana:  
+0. Launch the containers for the application, Prometheus, and Grafana:  
    `docker-compose -f ./deployments/docker-compose.yaml up -d`
 0. Look up the dynamic ports in use:
    `docker-compose -f ./deployments/docker-compose.yaml ps`
