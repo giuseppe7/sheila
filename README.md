@@ -1,7 +1,7 @@
 # sheila
 
-S.H.E.I.L.A stands for "Sampling Hue Environment Information Leveraging APIs"
-and is meant soley as a personal project. Currently, it does the following:
+S.H.E.I.L.A. stands for "Sampling Hue Environment Information Leveraging APIs"
+and is meant solely as a personal project. Currently, it does the following:
 
 * Samples Hue light and sensor information and exposes this as an endpoint.
 * Lauches side car containers Prometheus and Grafana to visualize this
