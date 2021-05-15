@@ -25,13 +25,13 @@ local: container
 	@echo "⋮⋮ Launching containers for local use..."
 	./scripts/config-remote-prometheus.sh
 	@sleep 5
-	docker-compose -f ./deployments/docker-compose.yaml up -d --force-recreate
+	docker compose -f ./deployments/docker-compose.yaml --project-name sheila up -d --force-recreate
 	@sleep 5
 	./scripts/config-revert-prometheus.sh
 	docker ps | grep sheila
 
 clean-local:
-	docker-compose -f ./deployments/docker-compose.yaml down
+	docker-compose -f ./deployments/docker-compose.yaml --project-name sheila down
 
 all: build test container
 	@echo
