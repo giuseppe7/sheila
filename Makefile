@@ -31,7 +31,7 @@ local: container
 	docker ps | grep sheila
 
 clean-local:
-	docker-compose -f ./deployments/docker-compose.yaml --project-name sheila down
+	docker compose -f ./deployments/docker-compose.yaml --project-name sheila down
 
 all: build test container
 	@echo
